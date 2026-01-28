@@ -15,13 +15,13 @@ export default function PersonalInformationSection() {
 
 const change_fname = (e: React.ChangeEvent<HTMLInputElement>) => {
   setfname(e.target.value);
-  console.log("First name:", e.target.value);
+  console.log("First Name:", e.target.value);
 };
 
 
 const change_lname = (e: React.ChangeEvent<HTMLInputElement>) => {
   setlname(e.target.value);
-  console.log("Last name:", e.target.value);
+  console.log("Last Name:", e.target.value);
 };
 
 
@@ -40,7 +40,7 @@ const change_lname = (e: React.ChangeEvent<HTMLInputElement>) => {
 
  const change_bio = (e: React.ChangeEvent<HTMLInputElement>) => {
   setbio(e.target.value);
-  console.log("Bio :", e.target.value);
+  console.log("Bio:", e.target.value);
 };
 
   return (
@@ -50,8 +50,9 @@ const change_lname = (e: React.ChangeEvent<HTMLInputElement>) => {
         subtitle="Update your personal details here."
       />
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-        <Input onChange={change_fname} value={fname}
+        <Input onChange={change_fname}
         label="First Name" type="text" defaultValue="Alex" />
+
         <Input onChange={change_lname}
          label="Last Name" type="text" defaultValue="Morgan" />
         <Input onChange={change_email}
