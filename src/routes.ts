@@ -1,41 +1,41 @@
-
 export const ROUTES = {
   HOME: "/",
-  
-  // Cars routes
+
+  AUTH: {
+    LOGIN: "/login",
+    REGISTER: "/Registernow",
+    FORGOT_PASSWORD: "/forgot-password",
+  },
+
   CARS: {
     BASE: "/",
-    NEW: "/",
-    USED: "/",
+    NEW: "/cars/new",
+    USED: "/cars/used",
   },
-  
-  // Settings routes
+
   SETTINGS: {
-    BASE: "/settings/profile",
+    BASE: "/settings",
     PROFILE: "/settings/profile",
     ADS: "/settings/ads",
     AUCTION_BOOKINGS: "/settings/auction-bookings",
     INSPECTION_BOOKINGS: "/settings/inspection-bookings",
     PAYMENT_HISTORY: "/settings/payment-history",
   },
-  
-  // Post Ad
-  POST_AD: "/",
-  
-  // Dealer & Services
-  BECOME_DEALER: "/",
+
+  POST_AD: "/sell-car",
+
+  // ✅ add these
+  BECOME_DEALER: "/become-dealer",
   FIND_CARS: "/find-cars",
-  
-  // Tools & Services
+
   TOOLS: {
-    CAR_LOAN_CALCULATOR: "/",
-    CAR_AFFORDABILITY: "/",
-    SHIP_CAR: "/",
-    CAR_WARRANTY: "/",
-    CAR_INSURANCE: "/",
-    CAR_MAINTENANCE: "/",
+    CAR_LOAN_CALCULATOR: "/car-loan-calculator",
+    CAR_AFFORDABILITY: "/car-affordability",
+    SHIP_CAR: "/ship-car",
+    CAR_WARRANTY: "/car-warranty",
+    CAR_INSURANCE: "/car-insurance",
+    CAR_MAINTENANCE: "/car-maintenance",
   },
-  
-  // Other
-  SITEMAP: "/",
+
+  SITEMAP: "/sitemap",
 } as const;

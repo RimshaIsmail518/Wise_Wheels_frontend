@@ -50,32 +50,36 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             {/* Log In */}
             <Link
-              href={ROUTES.SETTINGS.PROFILE}
+              href={ROUTES.AUTH.LOGIN}
               className="hidden items-center space-x-2 text-sm font-medium text-white sm:flex"
             >
-              <Icon src="/user.svg" alt="User" size="h-5 w-5" />
+              {/* <Icon src="/user.svg" alt="User" size="h-5 w-5" /> */}
               <span className="transition-all hover:scale-95 hover:opacity-70">
                 Log In
               </span>
             </Link>
 
+            {/* User Profile */}
+            <Link
+              href={ROUTES.SETTINGS.PROFILE}
+              className="hidden items-center space-x-2 text-sm font-medium text-white sm:flex"
+            >
+              <Icon src="/user.svg" alt="User" size="h-5 w-5" />
+              <span className="transition-all hover:scale-95 hover:opacity-70">
+                User profile
+              </span>
+            </Link>
+
             {/* Country Selector */}
             <div className="hidden items-center space-x-2 text-sm font-medium text-white sm:flex">
-              {/* Globe Icon */}
               <Icon src="/globe.svg" alt="Globe" size="h-6 w-6" />
-              {/* Pakistan Flag Icon */}
-              <Icon
-                src="/pakflag.svg"
-                alt="Pakistan Flag"
-                width="w-4"
-                height="h-5"
-              />
+              <Icon src="/pakflag.svg" alt="Pakistan Flag" width="w-4" height="h-5" />
               <span>Pakistan</span>
             </div>
 
-            {/* Post Your Ad Button - Orange */}
+            {/* Post Your Ad Button */}
             <Link
-              href="/post-ad"
+              href={ROUTES.POST_AD}
               className="flex h-[42px] items-center justify-center rounded bg-post-ad px-6 py-1 text-sm font-semibold text-white shadow-md transition-all hover:bg-post-ad-hover hover:shadow-lg"
             >
               Post Your Ad
@@ -107,23 +111,34 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
+
+              {/* Mobile Log In */}
               <Link
-                href={ROUTES.SETTINGS.PROFILE}
+                href={ROUTES.AUTH.LOGIN}
                 className="flex items-center space-x-2 rounded-lg px-4 py-2 text-sm font-medium text-white hover:bg-primary-hover"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <Icon src="/user.svg" alt="User" size="h-5 w-5" />
+                {/* <Icon src="/user.svg" alt="User" size="h-5 w-5" /> */}
                 <span>Log In</span>
               </Link>
+{/* Mobile User Profile */}
+<Link
+  href={ROUTES.SETTINGS.PROFILE}  // or ROUTES.SETTINGS.PROFILE
+  className="flex items-center space-x-2 rounded-lg px-4 py-2 text-sm font-medium text-white hover:bg-primary-hover"
+  onClick={() => setIsMenuOpen(false)}
+>
+  <Icon src="/user.svg" alt="User" size="h-5 w-5" />
+  <span>User profile</span>
+</Link>
+
+
+
+
               <div className="flex items-center space-x-2 rounded-lg px-4 py-2 text-sm font-medium text-white">
-                <Icon
-                  src="/pakflag.svg"
-                  alt="Pakistan Flag"
-                  width="w-4"
-                  height="h-5"
-                />
+                <Icon src="/pakflag.svg" alt="Pakistan Flag" width="w-4" height="h-5" />
                 <span>Pakistan</span>
               </div>
+
               <Link
                 href={ROUTES.POST_AD}
                 className="flex h-[42px] items-center justify-center rounded bg-post-ad px-6 py-1 text-sm font-semibold text-white hover:bg-post-ad-hover"

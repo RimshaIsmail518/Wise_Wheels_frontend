@@ -70,6 +70,7 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
                 </div>
               }
             >
+          
               {children}
             </Suspense>
           </div>
