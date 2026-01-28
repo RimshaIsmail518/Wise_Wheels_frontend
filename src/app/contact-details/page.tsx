@@ -14,16 +14,6 @@ export default function WiseWheelsContactDetails() {
 
   return (
     <div className="min-h-screen bg-[#F0F7FF] font-sans text-[#1C2B38] relative">
-      
-      {/* --- NAVBAR --- */}
-      <nav className="flex items-center justify-between px-4 md:px-16 py-4 bg-[#F0F7FF]">
-        <img src="/logo.svg" alt="Wise Wheels" className="h-10 w-auto" />
-        <div className="hidden lg:flex items-center gap-8 text-[14px] font-medium text-black">
-          <a href="#">New Cars</a> <a href="#">Used Cars</a> <a href="#">Buy</a> <a href="#">Sell</a> <a href="#">News</a>
-          <button className="bg-[#0084FF] text-white px-6 py-2.5 rounded-md font-bold">Post Your Ad</button>
-        </div>
-      </nav>
-
       <main className="max-w-[1250px] mx-auto pt-6 px-4 pb-24">
         <h1 className="text-4xl font-black text-center mb-10 text-black uppercase tracking-tight">Sell My Car</h1>
 

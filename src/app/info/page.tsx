@@ -31,22 +31,6 @@ export default function SellCarDetails() {
 
   return (
     <div className="min-h-screen bg-[#F0F7FF] font-sans text-[#1C2B38] pb-20">
-      
-      {/* NAVBAR */}
-      <nav className="flex items-center justify-between px-6 md:px-16 py-4 bg-white border-b border-gray-100">
-        <div className="flex flex-col items-center">
-           <span className="font-black italic text-xl text-[#002C52] tracking-tighter">WISE WHEELS</span>
-        </div>
-        <div className="hidden lg:flex items-center gap-8 text-[14px] font-bold text-gray-800">
-          <a href="#">New Cars</a>
-          <a href="#">Used Cars</a>
-          <a href="#">Buy</a>
-          <a href="#" className="text-[#0084FF]">Sell</a>
-          <button className="bg-[#0084FF] text-white px-8 py-2.5 rounded-lg font-bold shadow-lg shadow-blue-100 transition-transform hover:scale-105">
-            Post Your Ad
-          </button>
-        </div>
-      </nav>
 
       <main className="max-w-[1250px] mx-auto pt-8 px-4">
         <h1 className="text-4xl font-black text-center mb-10 text-black uppercase tracking-tight">Sell My Car</h1>

@@ -15,26 +15,6 @@ export default function SellCarFinal() {
 
   return (
     <div className="min-h-screen bg-[#F0F7FF] font-sans text-[#1C2B38]">
-      {/* --- Navbar --- */}
-      <nav className="flex items-center justify-between px-4 md:px-16 py-4 bg-[#F0F7FF]">
-        <div className="flex items-center">
-          {/* LOGO IMAGE ADDED HERE */}
-          <img 
-            src="/logo.svg" 
-            alt="Wise Wheels" 
-            className="h-8 md:h-10 w-auto object-contain" 
-          />
-        </div>
-        <div className="hidden lg:flex items-center gap-8 text-[14px] font-medium">
-          <a href="#" className="hover:text-[#0084FF]">New Cars</a>
-          <a href="#" className="hover:text-[#0084FF]">Used Cars</a>
-          <a href="#" className="hover:text-[#0084FF]">Buy</a>
-          <a href="#" className="hover:text-[#0084FF]">Sell</a>
-          <a href="#" className="hover:text-[#0084FF]">News</a>
-          <button className="font-bold ml-4">Login</button>
-          <button className="bg-[#0084FF] text-white px-6 py-2.5 rounded-md font-bold text-[14px]">Post Your Ad</button>
-        </div>
-      </nav>
 
       <main className="max-w-[1200px] mx-auto pt-6 px-4 md:px-10 pb-20">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-10 tracking-tight text-black">SELL MY CAR</h1>
