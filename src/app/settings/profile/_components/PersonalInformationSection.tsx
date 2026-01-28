@@ -11,7 +11,7 @@ export default function PersonalInformationSection() {
   const[lname,setlname]=useState("");
   const[email,setemail]=useState("");
   const[phonenum,setphonenum]=useState("");
-  const[bio,setbio]=useState("");
+
 
 const change_fname = (e: React.ChangeEvent<HTMLInputElement>) => {
   setfname(e.target.value);
@@ -38,10 +38,7 @@ const change_lname = (e: React.ChangeEvent<HTMLInputElement>) => {
   console.log("Phone Number:", e.target.value);
 };
 
- const change_bio = (e: React.ChangeEvent<HTMLInputElement>) => {
-  setbio(e.target.value);
-  console.log("Bio:", e.target.value);
-};
+
 
   return (
     <Card padding="lg">
@@ -67,7 +64,7 @@ const change_lname = (e: React.ChangeEvent<HTMLInputElement>) => {
         />
       </div>
       <div className="mt-6">
-        <Textarea onChange={change_bio }
+        <Textarea 
           label="Bio"
           defaultValue="Car enthusiast and collector. Looking for vintage classics."
           rows={4}
