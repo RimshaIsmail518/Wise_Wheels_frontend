@@ -10,7 +10,8 @@ type Status =
   | "cancel"
   | "completed"
   | "upcoming"
-  | "cancelled";
+  | "cancelled"
+  | "failed"; // ✅ added
 
 interface StatusBadgeProps {
   status: Status;
@@ -18,7 +19,10 @@ interface StatusBadgeProps {
   className?: string;
 }
 
-const statusStyles: Record<Status, { bg: string; text: string; label: string }> = {
+const statusStyles: Record<
+  Status,
+  { bg: string; text: string; label: string }
+> = {
   active: { bg: "bg-success", text: "text-white", label: "Active" },
   pending: { bg: "bg-orange-500", text: "text-white", label: "Pending" },
   sold: { bg: "bg-gray-400", text: "text-white", label: "Sold" },
@@ -29,10 +33,10 @@ const statusStyles: Record<Status, { bg: string; text: string; label: string }> 
   completed: { bg: "bg-success", text: "text-white", label: "Completed" },
   upcoming: { bg: "bg-blue-500", text: "text-white", label: "Upcoming" },
   cancelled: { bg: "bg-red-500", text: "text-white", label: "Cancelled" },
-  failed: { bg: "bg-red-500", text: "text-white", label: "Failed" },
+  failed: { bg: "bg-red-500", text: "text-white", label: "Failed" }, // ✅ now valid
 };
 
-const sizeClasses = {
+const sizeClasses: Record<NonNullable<StatusBadgeProps["size"]>, string> = {
   sm: "h-[15px] px-2 text-[6.42857px] rounded-[3.21429px]",
   md: "h-9 px-4 text-xs rounded-md",
   lg: "h-[21.89px] px-2 text-[9.38253px] leading-[11px] rounded-[4.69px] w-fit",
